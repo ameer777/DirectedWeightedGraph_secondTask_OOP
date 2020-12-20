@@ -62,5 +62,31 @@ Classes:
 			save: save the graph to the given file name in JSON format
 			load: load a graph to this graph algorithm by JSON format
 	
-	
+	Ex2: 
+	is the main class of the pokemon game. the game communicate with the server by the game service interface.
+	 the game launch with his gui.
+	 
+	 the class contain:
+          win: the main GUI frame that responsible to draw our game
+		ar: the game arena contains information from the game between each move
+		log: represent the game login panel, if we want to login we need to press login in the login panel 
+		and then start game.
+		agents: list of objects represents the agents in the game
+		pokemons: list of objects represent the pokemons in the game
+		id: the id of user
 		
+		GFrame: the main GUI of the game responsible to draw our game, the window is serializable
+		
+		Login Panel: 	
+	        A window that appears at the beginning of the game.
+	        to login we have to insert id and press login to save our score and then press start game.
+	        we can choose between 24 (0-23) levels
+		
+		CL_Agent:
+	         represent agents in the game, the agent was created by JSON String from the client in every move.
+	         every agent contains: speed, the current edge , the current node and the location on the graph
+		
+		CL_Pokemon:
+	         represent pokemon in the game, the pokemon was created by JSON String from the client in every move.
+	         every pokemon contains location on the graph , edge on the graph, value of the pokemos and type
+  
